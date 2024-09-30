@@ -1,9 +1,9 @@
 import telebot
-from config import TOKEN
+from config import token
 from orm import Person
 
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(token)
 users = {}
 
 @bot.message_handler(commands=['start'])
